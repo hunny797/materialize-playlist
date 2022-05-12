@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,6 +34,15 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+
       @media screen and (max-width: 670px) {
         header {
           min-height: 500px;
@@ -110,12 +120,90 @@
       </div>
     </section>
     <!-- parallax -->
-
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
     <!-- services / tabs -->
-
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do...</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vero
+            consectetur cum nesciunt aliquam libero consequatur?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vero
+            consectetur cum nesciunt aliquam libero consequatur?
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photography</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">Photography</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              vero consectetur cum nesciunt aliquam libero consequatur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              vero consectetur cum nesciunt aliquam libero consequatur?
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">Editing</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              vero consectetur cum nesciunt aliquam libero consequatur?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              vero consectetur cum nesciunt aliquam libero consequatur?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- parallax -->
-
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/city.jpg" />
+      </div>
+    </div>
     <!-- contact form -->
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, facilis
+        id illo perferendis reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, facilis
+        id illo perferendis reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, facilis
+        id illo perferendis reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, facilis
+        id illo perferendis reiciendis!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In a, facilis
+        id illo perferendis reiciendis!
+      </p>
+    </div>
 
     <!-- footer -->
 
@@ -126,6 +214,8 @@
       $(document).ready(function () {
         $(".sidenav").sidenav();
         $(".materialboxed").materialbox();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
       });
     </script>
   </body>
